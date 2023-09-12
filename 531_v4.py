@@ -125,7 +125,7 @@ while True:
         continue
 
     elif tm == "":
-        print(f'You need to enter a training max! If you don\'t know your training max, enter "tm" (without the quotes).')
+        print(f'You need to enter a training max! If you do not know your training max, enter "tm" (without the quotes).')
         continue
 
     elif not tm.isnumeric():
