@@ -18,11 +18,11 @@ There are also "tm" and "back" options added.
 
 "tm" calculates the training max using the formula Jim uses in his program: (n_reps * weight_lifted * 0.0333 + weight_lifted)*0.9 
 
-Bear in mind that it currently uses 90% of the training max, some people might prefer lower/higher percentage!
+Bear in mind that it currently uses 90% of the training max, some might prefer lower/higher percentage!
 
 <br>
 
-"back" is used to rewrite the exercise or training max in case of a mistake.
+"back" is used to rewrite the exercise or training max in case of a mistake. Not fully polished.
 
 <br>
 
