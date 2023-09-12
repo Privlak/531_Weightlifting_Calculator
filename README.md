@@ -1,6 +1,6 @@
 ## Introducing the **531 Weightlifting Calculator** for **Jim Wendler's 531 Program**: <br>
 
- An **in-depth look into the program**: 
+ An **in-depth look into the program:** 
  <br>
 https://www.lift.net/workout-routines/wendler-5-3-1/
 
@@ -10,7 +10,7 @@ A Python script that calculates the monthly progression for inputted exercises a
 
 <br>
 
-## Versions:
+## **Versions:**
 
 ### **Version 1:**
 
@@ -45,4 +45,13 @@ For added convenience and organization, Version 3 of the script not only incorpo
 ### **Version 4:** 
 
 This version enhances the script from its predecessor by **implementing comprehensive error prevention mechanisms**. It ensures that input data conforms to specified types and introduces a more polished "back" option to correct inaccurate inputs. There are also minor cosmetic changes to improve the experience.
+
+<br>
+
+## **Future plans, ideas and additions:**
+
+- Tests
+- GUI
+- Variations of 531 (Boring but Big, Beefcake, ...)
+
 
