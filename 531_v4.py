@@ -16,7 +16,7 @@ while True:
 print("---------------------------------------------------------------------------------------------------------------")
 print("Enter the exercises you want to calculate your training max for, one per line!" + "\n")
 print('Enter "back" (without the quotes) to go back and rewrite the exercise.' + "\n")
-print('Enter "done" (without the quotes) to end the list.' + "\n")
+print('Enter "done" (without the quotes) to end the list.')
 print("---------------------------------------------------------------------------------------------------------------")
 
 exercises = []
@@ -61,7 +61,7 @@ print("-------------------------------------------------------------------------
 print("Enter your training maxes in the same order as your exercises (check list above), one per line!" + "\n")
 print('If you dont know your training max, enter "tm" (without the quotes).' + "\n")
 print('Enter "back" (without the quotes) to go back and rewrite the training max.' + "\n")
-print('Enter "done" (without the quotes) to end the list.' + "\n")
+print('Enter "done" (without the quotes) to end the list.')
 print("---------------------------------------------------------------------------------------------------------------")
 
 training_max = []
