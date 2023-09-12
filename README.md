@@ -34,5 +34,5 @@ For added convenience and organization, Version 3 of the script not only incorpo
 
 **Version 4:** 
 
-This version enhances the script from its predecessor by implementing comprehensive error prevention mechanisms. It ensures that input data conforms to specified types and introduces a user-friendly "back" option to correct inaccurate inputs.
+This version enhances the script from its predecessor by implementing comprehensive error prevention mechanisms. It ensures that input data conforms to specified types and introduces a user-friendly "back" option to correct inaccurate inputs. There are also minor cosmetic changes to improve the experience.
 
