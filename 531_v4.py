@@ -13,11 +13,11 @@ while True:
         break
 
 # Creating a list of exercises
-print("------------------------------------------------------------------------------------------------------------------------")
+print("---------------------------------------------------------------------------------------------------------------")
 print("\n" + "Enter the exercises you want to calculate your training max for, one per line!" + "\n")
 print('Enter "back" (without the quotes) to go back and rewrite the exercise.' + "\n")
 print('Enter "done" (without the quotes) to end the list.' + "\n")
-print("------------------------------------------------------------------------------------------------------------------------")
+print("---------------------------------------------------------------------------------------------------------------")
 
 exercises = []
 current_index = 0 
@@ -57,12 +57,12 @@ print()
 print(exercises)
 
 # Creating a list of training max values
-print("------------------------------------------------------------------------------------------------------------------------")
+print("---------------------------------------------------------------------------------------------------------------")
 print("\n" + "Enter your training maxes in the same order as your exercises (check list above), one per line!" + "\n")
 print('If you dont know your training max, enter "tm" (without the quotes).' + "\n")
 print('Enter "back" (without the quotes) to go back and rewrite the training max.' + "\n")
 print('Enter "done" (without the quotes) to end the list.' + "\n")
-print("------------------------------------------------------------------------------------------------------------------------")
+print("---------------------------------------------------------------------------------------------------------------")
 
 training_max = []
 current_index = 0
