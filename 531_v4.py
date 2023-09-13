@@ -13,11 +13,11 @@ while True:
         break
 
 # Creating a list of exercises
-print("---------------------------------------------------------------------------------------------------------------")
+print("----------------------------------------------------------------------------------------")
 print("Enter the exercises you want to calculate your training max for, one per line!" + "\n")
 print('Enter "back" (without the quotes) to go back and rewrite the exercise.' + "\n")
 print('Enter "done" (without the quotes) to end the list.')
-print("---------------------------------------------------------------------------------------------------------------")
+print("----------------------------------------------------------------------------------------")
 
 exercises = []
 current_index = 0 
@@ -31,8 +31,8 @@ while True:
     elif e.lower() == "back":
         if current_index > 0:
             current_index -= 1
-            del exercises[current_index]
             print(f"Returning to Exercise {current_index + 1}")
+            del exercises[current_index]
             continue
         else:
             print("You need to enter an exercise!")
@@ -53,31 +53,35 @@ while True:
 for c in range(len(exercises)):
     exercises[c] = exercises[c].title()
 
-print()
-print(exercises)
+# Printing out the exercises
+print("----------------------------------------------------------------------------------------")
+exercise_number = 1
+for e in exercises:
+    print(f"{exercise_number}) - {e}")
+    exercise_number += 1
 
 # Creating a list of training max values
-print("---------------------------------------------------------------------------------------------------------------")
-print("Enter your training maxes in the same order as your exercises (check list above), one per line!" + "\n")
+print("----------------------------------------------------------------------------------------")
+print("Enter your training max, one per line!" + "\n")
 print('If you dont know your training max, enter "tm" (without the quotes).' + "\n")
 print('Enter "back" (without the quotes) to go back and rewrite the training max.' + "\n")
 print('Enter "done" (without the quotes) to end the list.')
-print("---------------------------------------------------------------------------------------------------------------")
+print("----------------------------------------------------------------------------------------")
 
 training_max = []
-current_index = 0
+i = 0
 
-while True:
-    tm = input(f"Training max {current_index + 1}: ")
+while i < current_index:
+    tm = input(f"Training max for {exercises[i]}: ")
 
     if tm.lower() == "done":
         break
 
     elif tm.lower() == "back":
-        if current_index > 0:
-            current_index -= 1
-            del training_max[current_index]
-            print(f"Returning to training max for exercise {current_index + 1}")
+        if i > 0:
+            i -= 1
+            del training_max[i]
+            print(f"Returning to training max for {exercises[i]}")
             continue
         else:
             print("You need to enter a training max!")
@@ -85,7 +89,7 @@ while True:
 
     if tm == "tm":
         while True:
-            weight_lifted = input(f'What is the highest weight you successfully lifted for {exercises[current_index]}? (Type "back" to go back): ')
+            weight_lifted = input(f'What is the highest weight you successfully lifted for {exercises[i]}? (Type "back" to go back): ')
 
             if weight_lifted == "":
                 print("You need to enter a training max!")
@@ -117,8 +121,8 @@ while True:
 
                 tm = float(round((n_reps * weight_lifted * 0.0333 + weight_lifted) * 0.9)) # Currently using 90%
                 training_max.append(tm)
-                print(f"Calculated training max added to exercise {exercises[current_index]}!")
-                current_index += 1
+                print(f"Calculated training max added to exercise {exercises[i]}!")
+                i += 1
 
                 break 
             break
@@ -133,8 +137,7 @@ while True:
         continue
 
     training_max.append(tm)
-    current_index += 1
-
+    i += 1
 
 # Create a directory and write the monthly program to "{username_capitalized}_531.txt"
 desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
