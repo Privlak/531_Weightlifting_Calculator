@@ -149,15 +149,16 @@ if not os.path.exists(gym_path):
 file_path = os.path.join(gym_path, f"{username_capitalized}_531.txt")
     
 with open(file_path, "w") as f:
-    f.write("Training maxes: " + "\n")
+    f.write("[Training maxes]" + "\n")
+    f.write("--------------------------------------" + "\n")
     
     for e, tm in zip(exercises, training_max):
-        f.write(e + "-" + str(tm) + "kg" + "\n")
-    f.write("\n")
-    
+        f.write(e + " - " + str(tm) + "kg" + "\n")
+ 
     for e, tm in zip(exercises, training_max):
+        f.write("--------------------------------------" + "\n")
         f.write(e + "\n")
         f.write("Week 1 -" + " " + str(round(0.65 * float(tm), 2)) + "x5, " + str(round(0.75 * float(tm), 2)) + "x5, " + str(round(0.85 * float(tm), 2)) + "x5+" + "\n")
         f.write("Week 2 -" + " " + str(round(0.70 * float(tm), 2)) + "x3, " + str(round(0.80 * float(tm), 2)) + "x3, " + str(round(0.90 * float(tm), 2)) + "x3+" + "\n")
         f.write("Week 3 -" + " " + str(round(0.75 * float(tm), 2)) + "x5, " + str(round(0.85 * float(tm), 2)) + "x3, " + str(round(0.95 * float(tm), 2)) + "x1+" + "\n")
-        f.write("Deload -" + " " + str(round(0.40 * float(tm), 2)) + "x5, " + str(round(0.50 * float(tm), 2)) + "x5, " + str(round(0.60 * float(tm), 2)) + "x5" + "\n" + "\n")
+        f.write("Deload -" + " " + str(round(0.40 * float(tm), 2)) + "x5, " + str(round(0.50 * float(tm), 2)) + "x5, " + str(round(0.60 * float(tm), 2)) + "x5" + "\n")
