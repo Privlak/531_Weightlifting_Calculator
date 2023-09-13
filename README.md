@@ -28,7 +28,7 @@ There are also "**tm**" and "**back**" options added.
 
 "**tm**" calculates the training max using the formula Jim uses in his program: 
 
-                                       (n_reps * weight_lifted * 0.0333 + weight_lifted) * 0.9 
+     (n_reps * weight_lifted * 0.0333 + weight_lifted) * 0.9 
 
 (Currently uses 90% of the training max, some might prefer lower/higher percentage!)
 
