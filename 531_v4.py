@@ -157,7 +157,7 @@ with open(file_path, "w") as f:
  
     for e, tm in zip(exercises, training_max):
         f.write("--------------------------------------" + "\n")
-        f.write(e + "\n")
+        f.write(f"[{e}]" + "\n")
         f.write("Week 1 -" + " " + str(round(0.65 * float(tm), 2)) + "x5, " + str(round(0.75 * float(tm), 2)) + "x5, " + str(round(0.85 * float(tm), 2)) + "x5+" + "\n")
         f.write("Week 2 -" + " " + str(round(0.70 * float(tm), 2)) + "x3, " + str(round(0.80 * float(tm), 2)) + "x3, " + str(round(0.90 * float(tm), 2)) + "x3+" + "\n")
         f.write("Week 3 -" + " " + str(round(0.75 * float(tm), 2)) + "x5, " + str(round(0.85 * float(tm), 2)) + "x3, " + str(round(0.95 * float(tm), 2)) + "x1+" + "\n")
