@@ -137,7 +137,7 @@ while i < current_index:
         print("Input must be a number (delimiter must be a dot ('.')!")
         continue
 
-    tm = round(float(tm) / 2.5) * 2.5 # Calculates increments of 2.5!
+    tm = round(float(tm) * 0.9 / 2.5) * 2.5 # Currently using 90%! Calculates increments of 2.5!
     training_max.append(tm)
     i += 1
 
