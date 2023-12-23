@@ -46,3 +46,4 @@ Incorporates the inclusion of **floats as eligible input values**. **Adjusts** t
 ___
 ### **Future ideas:**
 - Incorporate the possibility of choosing the percentage of a training max.
+- Incorporate the possibility of continuing the previous entry (adding 5/2.5 to the training maxes and calculating again).
