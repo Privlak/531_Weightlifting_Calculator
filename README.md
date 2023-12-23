@@ -50,10 +50,6 @@ This version enhances the script from its predecessor by **implementing comprehe
 
 <br>
 
-## **Future plans, ideas and additions:**
+### **Version 5:** 
 
-- Tests
-- GUI
-- Variations of 531 (Boring but Big, Beefcake, ...)
-
-
+Incorporates the inclusion of **floats as eligible input values**. **Adjusts** the **training max** and **training weights output** to **adhere to increments of 2.5**.
